@@ -1,0 +1,80 @@
+0000000000000000000000000000000000000000 da5631c56f8092360c939ccc4df12e12088b7472 nikhilharshwal <nharshwal13@gmail.com> 1755877174 +0530	clone: from https://github.com/nikhilharshwal/Simtrak-Website.git
+da5631c56f8092360c939ccc4df12e12088b7472 ddf82934abe62e64de9b9da47e6385bdfd2d20e6 nikhilharshwal <nharshwal13@gmail.com> 1756127447 +0530	pull --ff --recurse-submodules --progress origin: Fast-forward
+ddf82934abe62e64de9b9da47e6385bdfd2d20e6 92205ffc89b768b48a822baff297cc48f18f8f81 nikhilharshwal <nharshwal13@gmail.com> 1756131161 +0530	pull --ff --recurse-submodules --progress origin: Fast-forward
+92205ffc89b768b48a822baff297cc48f18f8f81 dcc7e9e160f4b6d5ca25feef29c84586fd057171 nikhilharshwal <nharshwal13@gmail.com> 1756131737 +0530	commit: added footer part
+dcc7e9e160f4b6d5ca25feef29c84586fd057171 b4d144399c3d3902f131fdc4e8605b90ffb25680 nikhilharshwal <nharshwal13@gmail.com> 1756132277 +0530	commit: update footer
+b4d144399c3d3902f131fdc4e8605b90ffb25680 45ac5b837ea2127b502caeb8eeb925f329d19452 nikhilharshwal <nharshwal13@gmail.com> 1756132292 +0530	pull --ff --recurse-submodules --progress origin: Merge made by the 'ort' strategy.
+45ac5b837ea2127b502caeb8eeb925f329d19452 9d908bf9003eb17187844568654464e0cd7b3ca0 nikhilharshwal <nharshwal13@gmail.com> 1756137705 +0530	pull --ff --recurse-submodules --progress origin: Fast-forward
+9d908bf9003eb17187844568654464e0cd7b3ca0 23f482f16cac0381fd6631bfab7b22bd60dd9051 nikhilharshwal <nharshwal13@gmail.com> 1756139229 +0530	commit: update navbar
+23f482f16cac0381fd6631bfab7b22bd60dd9051 2a13dd7bb76519ee128cc22ef0440ba97aab428b nikhilharshwal <nharshwal13@gmail.com> 1756223855 +0530	pull --ff --recurse-submodules --progress origin: Fast-forward
+2a13dd7bb76519ee128cc22ef0440ba97aab428b eefa32c92febb76b8a0ded6e144b32e14e1d7c55 nikhilharshwal <nharshwal13@gmail.com> 1756307925 +0530	pull --ff --recurse-submodules --progress origin: Fast-forward
+eefa32c92febb76b8a0ded6e144b32e14e1d7c55 22e04d7f73bacc8bb3caf044417f848d0e359f47 nikhilharshwal <nharshwal13@gmail.com> 1756408319 +0530	pull --ff --recurse-submodules --progress origin: Fast-forward
+22e04d7f73bacc8bb3caf044417f848d0e359f47 c2144d7d296309809450633679b27dd88ba07811 nikhilharshwal <nharshwal13@gmail.com> 1756905519 +0530	pull --ff --recurse-submodules --progress origin: Fast-forward
+c2144d7d296309809450633679b27dd88ba07811 a74cf40d6176cb0c2a762e0457713f7b1c28a011 nikhilharshwal <nharshwal13@gmail.com> 1756919046 +0530	commit: add internship section
+a74cf40d6176cb0c2a762e0457713f7b1c28a011 6dcad3035def72cfd6add2ffc26654724f7995a2 nikhilharshwal <nharshwal13@gmail.com> 1756919050 +0530	pull --ff --recurse-submodules --progress origin: Merge made by the 'ort' strategy.
+6dcad3035def72cfd6add2ffc26654724f7995a2 9cdead4bc6ba3a6ccd36b384dc327d9ea9fb542a nikhilharshwal <nharshwal13@gmail.com> 1756919918 +0530	commit: update button size
+9cdead4bc6ba3a6ccd36b384dc327d9ea9fb542a c16008ba59a9476befbe34a7e59aaf47b2b4aea2 nikhilharshwal <nharshwal13@gmail.com> 1756997265 +0530	commit: update gap in internship
+c16008ba59a9476befbe34a7e59aaf47b2b4aea2 bd253ab627709c538bd82e9f6496a67ea64a0943 nikhilharshwal <nharshwal13@gmail.com> 1757002326 +0530	pull --ff --recurse-submodules --progress origin: Fast-forward
+bd253ab627709c538bd82e9f6496a67ea64a0943 181399bbdd3d1956ac5ae915c04f078316a4b578 nikhilharshwal <nharshwal13@gmail.com> 1757077434 +0530	pull --ff --recurse-submodules --progress origin: Fast-forward
+181399bbdd3d1956ac5ae915c04f078316a4b578 d773a2c3cc92a0a4a15cb6c98222839fdaf1a053 nikhilharshwal <nharshwal13@gmail.com> 1757078755 +0530	pull --ff --recurse-submodules --progress origin: Fast-forward
+d773a2c3cc92a0a4a15cb6c98222839fdaf1a053 cc810838c7d629014c9b2f277304c0c52b42cd1e nikhilharshwal <nharshwal13@gmail.com> 1757082330 +0530	commit: update internship
+cc810838c7d629014c9b2f277304c0c52b42cd1e 69f255363979ed1e123ba75d4616992fe342fcae nikhilharshwal <nharshwal13@gmail.com> 1757082345 +0530	pull --ff --recurse-submodules --progress origin: Merge made by the 'ort' strategy.
+69f255363979ed1e123ba75d4616992fe342fcae 6108c4955beadb1323354ad00c8be739eea3a3ce nikhilharshwal <nharshwal13@gmail.com> 1757088746 +0530	commit: Update Clients.css
+6108c4955beadb1323354ad00c8be739eea3a3ce 123d082a27157f3863b92704af3a13e0159e11a2 nikhilharshwal <nharshwal13@gmail.com> 1757088848 +0530	commit (merge): update
+123d082a27157f3863b92704af3a13e0159e11a2 776ccd7ff9703f5d4bbe864c73e951452a68db01 nikhilharshwal <nharshwal13@gmail.com> 1757092281 +0530	pull --ff --recurse-submodules --progress origin: Merge made by the 'ort' strategy.
+776ccd7ff9703f5d4bbe864c73e951452a68db01 ebfecb13347ddaf4c70d0125eb6d5e904e329543 nikhilharshwal <nharshwal13@gmail.com> 1757093643 +0530	revert: Revert "Merge branch 'main' of https://github.com/nikhilharshwal/Simtrak-Website"
+ebfecb13347ddaf4c70d0125eb6d5e904e329543 cbd93728d1e69fbe5af6b0897f9158f06d1f1cee nikhilharshwal <nharshwal13@gmail.com> 1757172816 +0530	commit (amend): Revert "Merge branch 'main' of https://github.com/nikhilharshwal/Simtrak-Website"
+cbd93728d1e69fbe5af6b0897f9158f06d1f1cee a9e95038475e4152782b0da4e058038fed9834a8 nikhilharshwal <nharshwal13@gmail.com> 1757174722 +0530	commit: update navbar
+a9e95038475e4152782b0da4e058038fed9834a8 89c82c6631012ab733b3721195d822f95a91fae8 nikhilharshwal <nharshwal13@gmail.com> 1757174741 +0530	pull --ff --recurse-submodules --progress origin: Merge made by the 'ort' strategy.
+89c82c6631012ab733b3721195d822f95a91fae8 0bbd011637afe32da31634abc7df6422475f2220 nikhilharshwal <nharshwal13@gmail.com> 1757179101 +0530	commit: update internship
+0bbd011637afe32da31634abc7df6422475f2220 184443b6742bbe22e8414136e6ecba4f5a0dd696 nikhilharshwal <nharshwal13@gmail.com> 1757179107 +0530	pull --ff --recurse-submodules --progress origin: Merge made by the 'ort' strategy.
+184443b6742bbe22e8414136e6ecba4f5a0dd696 d1f7b0c8d92c3a9a3854da9df4c45ef15a8fb4ef nikhilharshwal <nharshwal13@gmail.com> 1757338566 +0530	pull --ff --recurse-submodules --progress origin: Fast-forward
+d1f7b0c8d92c3a9a3854da9df4c45ef15a8fb4ef 3525f2a2c821c1a1971b0366d21478cfd0bdff36 nikhilharshwal <nharshwal13@gmail.com> 1757339570 +0530	commit: update img
+3525f2a2c821c1a1971b0366d21478cfd0bdff36 d6acba1e333817e138173011c40145c8e7c0459c nikhilharshwal <nharshwal13@gmail.com> 1757348064 +0530	pull --ff --recurse-submodules --progress origin: Fast-forward
+d6acba1e333817e138173011c40145c8e7c0459c b6a98749f2b8fb6b98681f17b3a953bf2deb5a5e nikhilharshwal <nharshwal13@gmail.com> 1757429819 +0530	pull --ff --recurse-submodules --progress origin: Fast-forward
+b6a98749f2b8fb6b98681f17b3a953bf2deb5a5e c1694b9496248253fab40b126afea4fdb4da119c nikhilharshwal <nharshwal13@gmail.com> 1757434062 +0530	commit: update jd
+c1694b9496248253fab40b126afea4fdb4da119c 342f761b285f533f430cd8a8bbb58139324f4122 nikhilharshwal <nharshwal13@gmail.com> 1757439699 +0530	pull --ff --recurse-submodules --progress origin: Fast-forward
+342f761b285f533f430cd8a8bbb58139324f4122 6992193e371ae07f8636dda6e54b437f1c05b5ae nikhilharshwal <nharshwal13@gmail.com> 1757439866 +0530	commit: update
+6992193e371ae07f8636dda6e54b437f1c05b5ae 967a1e45e96cfd6670669194b02285d2efdf925a nikhilharshwal <nharshwal13@gmail.com> 1757515223 +0530	pull --ff --recurse-submodules --progress origin: Fast-forward
+967a1e45e96cfd6670669194b02285d2efdf925a 8e2146119c40ebfc9c1ba57f78fb8ddbc8914716 nikhilharshwal <nharshwal13@gmail.com> 1757515659 +0530	commit: added whychooseus
+8e2146119c40ebfc9c1ba57f78fb8ddbc8914716 3424046101dd1d3c75100a54a8c130a764f082fa nikhilharshwal <nharshwal13@gmail.com> 1757515810 +0530	commit (merge): added
+3424046101dd1d3c75100a54a8c130a764f082fa 469f3889fceae7e6fb7af1fabc45537c4aef56a7 nikhilharshwal <nharshwal13@gmail.com> 1757525077 +0530	pull --ff --recurse-submodules --progress origin: Fast-forward
+469f3889fceae7e6fb7af1fabc45537c4aef56a7 abcfac3bca000655858025825de8927c4702b3d2 nikhilharshwal <nharshwal13@gmail.com> 1757602565 +0530	pull --ff --recurse-submodules --progress origin: Fast-forward
+abcfac3bca000655858025825de8927c4702b3d2 0548d78fbf1f3d06ea2462ac6e461e3546c08db4 nikhilharshwal <nharshwal13@gmail.com> 1757613424 +0530	commit: update whychooseus
+0548d78fbf1f3d06ea2462ac6e461e3546c08db4 f19e4ee6ae40b8f782b56d75b0579e8110460517 nikhilharshwal <nharshwal13@gmail.com> 1757613429 +0530	pull --ff --recurse-submodules --progress origin: Merge made by the 'ort' strategy.
+f19e4ee6ae40b8f782b56d75b0579e8110460517 20dd932dc079733518d92bb9b49d88e392dc0c7b nikhilharshwal <nharshwal13@gmail.com> 1757688041 +0530	pull --ff --recurse-submodules --progress origin: Fast-forward
+20dd932dc079733518d92bb9b49d88e392dc0c7b d6439ff7cb9cbca49cb41527484a727a88fdc39f nikhilharshwal <nharshwal13@gmail.com> 1757689702 +0530	commit: update
+d6439ff7cb9cbca49cb41527484a727a88fdc39f 8a42c2aae29a3ca7db792ab93e6bacae03585e24 nikhilharshwal <nharshwal13@gmail.com> 1757689706 +0530	pull --ff --recurse-submodules --progress origin: Merge made by the 'ort' strategy.
+8a42c2aae29a3ca7db792ab93e6bacae03585e24 eb88289d501fc35c417beb296447447936f1e3b3 nikhilharshwal <nharshwal13@gmail.com> 1757698085 +0530	commit: update
+eb88289d501fc35c417beb296447447936f1e3b3 cc75c0b04b1f93a77d667b23eef710a78af1cbf5 nikhilharshwal <nharshwal13@gmail.com> 1757776354 +0530	pull --ff --recurse-submodules --progress origin: Fast-forward
+cc75c0b04b1f93a77d667b23eef710a78af1cbf5 ab980884de91a3bb0f80158f33291462e1132c9a nikhilharshwal <nharshwal13@gmail.com> 1757780556 +0530	commit: update internship
+ab980884de91a3bb0f80158f33291462e1132c9a 266dd54d84bb71ca2df3becbadaf896b0f79b1ab nikhilharshwal <nharshwal13@gmail.com> 1757780560 +0530	pull --ff --recurse-submodules --progress origin: Merge made by the 'ort' strategy.
+266dd54d84bb71ca2df3becbadaf896b0f79b1ab 926578844a0c786ee5b92c872d726849ea58facc nikhilharshwal <nharshwal13@gmail.com> 1757786726 +0530	commit: update whychooseus
+926578844a0c786ee5b92c872d726849ea58facc d20f59ac3179b09cdc2fc3b2aeb02c44164d2f81 nikhilharshwal <nharshwal13@gmail.com> 1757786731 +0530	pull --ff --recurse-submodules --progress origin: Merge made by the 'ort' strategy.
+d20f59ac3179b09cdc2fc3b2aeb02c44164d2f81 2acbe35879a26c4078928f7a754f358847cbf06e nikhilharshwal <nharshwal13@gmail.com> 1757788004 +0530	commit: update map
+2acbe35879a26c4078928f7a754f358847cbf06e 4fde61c3fd5da6eb9c2d1040684ab6dc6caac6ad nikhilharshwal <nharshwal13@gmail.com> 1757948768 +0530	pull --ff --recurse-submodules --progress origin: Fast-forward
+4fde61c3fd5da6eb9c2d1040684ab6dc6caac6ad 8fb69f4aa0c11b0bb4ec0655df2337225b250bf8 nikhilharshwal <nharshwal13@gmail.com> 1757954913 +0530	commit: update arrows
+8fb69f4aa0c11b0bb4ec0655df2337225b250bf8 e70a48f1214b77c3599bc5fad27d67a670de222b nikhilharshwal <nharshwal13@gmail.com> 1757954918 +0530	pull --ff --recurse-submodules --progress origin: Merge made by the 'ort' strategy.
+e70a48f1214b77c3599bc5fad27d67a670de222b fbef1eb3a887682c339e0226284f967c9b869c15 nikhilharshwal <nharshwal13@gmail.com> 1758030673 +0530	pull --ff --recurse-submodules --progress origin: Fast-forward
+fbef1eb3a887682c339e0226284f967c9b869c15 2edf4706d40e7ff5e7c8e254b4228f451e2a6e0f nikhilharshwal <nharshwal13@gmail.com> 1758038151 +0530	commit: update
+2edf4706d40e7ff5e7c8e254b4228f451e2a6e0f d2ee4181ce00f59d9b85c9f84a3694b6191725dc nikhilharshwal <nharshwal13@gmail.com> 1758038179 +0530	pull --ff --recurse-submodules --progress origin: Merge made by the 'ort' strategy.
+d2ee4181ce00f59d9b85c9f84a3694b6191725dc 69b6aaf72da9b2492f6c30471720010e17986cb8 nikhilharshwal <nharshwal13@gmail.com> 1758039308 +0530	commit: update services
+69b6aaf72da9b2492f6c30471720010e17986cb8 e99dd73a8df7a8e5acfcc688bf50658b44ffce55 nikhilharshwal <nharshwal13@gmail.com> 1758039325 +0530	pull --ff --recurse-submodules --progress origin: Merge made by the 'ort' strategy.
+e99dd73a8df7a8e5acfcc688bf50658b44ffce55 46b0abb4d1433f0f3f8b19dfa4f797a3a2c946c6 nikhilharshwal <nharshwal13@gmail.com> 1758044636 +0530	pull --ff --recurse-submodules --progress origin: Fast-forward
+46b0abb4d1433f0f3f8b19dfa4f797a3a2c946c6 3e0db71fb2cec259b522bf901f2fabbd9ff86c0b nikhilharshwal <nharshwal13@gmail.com> 1758126023 +0530	commit: update
+3e0db71fb2cec259b522bf901f2fabbd9ff86c0b be7f494ec0114254d71ea58b80347d915f21c043 nikhilharshwal <nharshwal13@gmail.com> 1758126029 +0530	pull --ff --recurse-submodules --progress origin: Merge made by the 'ort' strategy.
+be7f494ec0114254d71ea58b80347d915f21c043 aacaf9e525d468b4a24187efe9b588bd26f46a99 nikhilharshwal <nharshwal13@gmail.com> 1758214031 +0530	pull --ff --recurse-submodules --progress origin: Fast-forward
+aacaf9e525d468b4a24187efe9b588bd26f46a99 8239e66b4213bcad70658b3123a542c593f00760 nikhilharshwal <nharshwal13@gmail.com> 1758223914 +0530	commit: updated changes
+8239e66b4213bcad70658b3123a542c593f00760 212bb37bccadc01e0edb9b8140172e96c652c644 nikhilharshwal <nharshwal13@gmail.com> 1758287102 +0530	commit: update footer
+212bb37bccadc01e0edb9b8140172e96c652c644 ce1a55d46b3c271aa1c48f273f7c36d1736b3891 nikhilharshwal <nharshwal13@gmail.com> 1758295676 +0530	pull --ff --recurse-submodules --progress origin: Fast-forward
+ce1a55d46b3c271aa1c48f273f7c36d1736b3891 d4487515cfedd8faffcd5309f26a1789f05bac99 nikhilharshwal <nharshwal13@gmail.com> 1758303337 +0530	commit: update css of wcu
+d4487515cfedd8faffcd5309f26a1789f05bac99 66c51312a83bb5c76dd6e40f4df5402d7b798cf4 nikhilharshwal <nharshwal13@gmail.com> 1758303342 +0530	pull --ff --recurse-submodules --progress origin: Merge made by the 'ort' strategy.
+66c51312a83bb5c76dd6e40f4df5402d7b798cf4 6dc98cf7451519ddb3ffa7a98f8be3aa320e7b55 nikhilharshwal <nharshwal13@gmail.com> 1758385687 +0530	pull --ff --recurse-submodules --progress origin: Fast-forward
+6dc98cf7451519ddb3ffa7a98f8be3aa320e7b55 c7ed42bcb4465e0c697d49be70d7af5aef032f56 nikhilharshwal <nharshwal13@gmail.com> 1758397880 +0530	commit: update img
+c7ed42bcb4465e0c697d49be70d7af5aef032f56 1abf7f0bc41b7661cc5552f90a60bfbcad1ec64d nikhilharshwal <nharshwal13@gmail.com> 1758397884 +0530	pull --ff --recurse-submodules --progress origin: Merge made by the 'ort' strategy.
+1abf7f0bc41b7661cc5552f90a60bfbcad1ec64d 3e8a3bd6f91b17d2c2d73b06b93222ba05be86b0 nikhilharshwal <nharshwal13@gmail.com> 1758402856 +0530	commit: update whychooseus
+3e8a3bd6f91b17d2c2d73b06b93222ba05be86b0 b2190af4c963e3aa380cd595a312506e64d11a43 nikhilharshwal <nharshwal13@gmail.com> 1758570842 +0530	commit: update
+b2190af4c963e3aa380cd595a312506e64d11a43 b1f8e7f9a02ff8bc41a0d534da6b7807ba1e46c3 nikhilharshwal <nharshwal13@gmail.com> 1758643035 +0530	pull --ff --recurse-submodules --progress origin: Fast-forward
+b1f8e7f9a02ff8bc41a0d534da6b7807ba1e46c3 12c6104b2af054b9b98803d3b6350c70a02d2b42 nikhilharshwal <nharshwal13@gmail.com> 1758805320 +0530	pull --ff --recurse-submodules --progress origin: Fast-forward
+12c6104b2af054b9b98803d3b6350c70a02d2b42 548fcc2a78d7fee7696e7a9dccbe859ec7400591 nikhilharshwal <nharshwal13@gmail.com> 1758825432 +0530	commit: update
+548fcc2a78d7fee7696e7a9dccbe859ec7400591 5d461edcc989b2a2842d5c3ed19456d65b94599f nikhilharshwal <nharshwal13@gmail.com> 1759933304 +0530	commit: update

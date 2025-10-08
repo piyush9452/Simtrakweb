@@ -1,0 +1,293 @@
+
+/* ===== Heading Letter-by-Letter Popup ===== */
+
+
+.service-hero h1 span {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(-30px);
+  animation: serviceLetterPop 0.8s forwards;
+}
+
+@keyframes serviceLetterPop {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Delay each letter slightly */
+.service-hero h1 span:nth-child(1) { animation-delay: 0.8s; }
+.service-hero h1 span:nth-child(2) { animation-delay: 0.05s; }
+.service-hero h1 span:nth-child(3) { animation-delay: 0.1s; }
+.service-hero h1 span:nth-child(4) { animation-delay: 0.15s; }
+.service-hero h1 span:nth-child(5) { animation-delay: 0.2s; }
+.service-hero h1 span:nth-child(6) { animation-delay: 0.25s; }
+.service-hero h1 span:nth-child(7) { animation-delay: 0.3s; }
+.service-hero h1 span:nth-child(8) { animation-delay: 0.35s; }
+.service-hero h1 span:nth-child(9) { animation-delay: 0.4s; }
+.service-hero h1 span:nth-child(10) { animation-delay: 0.45s; }
+.service-hero h1 span:nth-child(11) { animation-delay: 0.5s; }
+.service-hero h1 span:nth-child(12) { animation-delay: 0.55s; }
+.service-hero h1 span:nth-child(13) { animation-delay: 0.6s; }
+.service-hero h1 span:nth-child(14) { animation-delay: 0.65s; }
+
+/* ===== Cards Row-by-Row Popup ===== */
+.services-grid {
+  opacity: 0;
+  transform: translateY(50px);
+  animation: servicesGridPop 1s forwards;
+  animation-delay: 0.2s; /* starts after heading is done */
+}
+
+@keyframes servicesGridPop {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Each card pops with stagger */
+.service-card {
+  opacity: 0;
+  transform: scale(0.9);
+  animation: cardPop 0.6s forwards;
+}
+
+@keyframes cardPop {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.service-card:nth-child(1) { animation-delay: 1.4s; }
+.service-card:nth-child(2) { animation-delay: 1.6s; }
+.service-card:nth-child(3) { animation-delay: 1.8s; }
+.service-card:nth-child(4) { animation-delay: 2s; }
+.service-card:nth-child(5) { animation-delay: 2.2s; }
+.service-card:nth-child(6) { animation-delay: 2.4s; }
+.service-card:nth-child(7) { animation-delay: 2.6s; }
+.service-card:nth-child(8) { animation-delay: 2.8s; }
+.service-card:nth-child(9) { animation-delay: 3s; }
+.service-card:nth-child(10) { animation-delay: 3.2s; }
+.service-card:nth-child(11) { animation-delay: 3.4s; }
+.service-card:nth-child(12) { animation-delay: 3.6s; }
+
+/* ===== Keep Hover Popup + Flip Effect ===== */
+.service-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+  z-index: 2;
+}
+
+.service-card:hover .service-icon img {
+  transform: rotateY(180deg);
+}
+
+
+/* ---------------- Services Section ---------------- */
+#services-section {
+  padding: 60px 20px;
+  background-color: #f8faff;
+  text-align: center;
+}
+
+.section-subtitle {
+  font-size: 34px;
+  text-transform: uppercase;
+  color: #888;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+
+.section-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: #222;
+}
+
+/* Grid layout */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+/* Individual card */
+.service-card {
+  /* background: #fffaf5; */
+  
+  border: 4px solid grey;
+  border-radius: 15px;
+  padding: 30px 20px;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;      /* stack icon, title, description */
+  justify-content: flex-start; /* align text at top */
+  height: 100%;                /* make equal height */
+}
+
+
+
+/* Image on top */
+.service-icon img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 15px;
+  object-fit: contain;
+}
+
+/* Title */
+.service-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #333;
+  min-height: 2ch; /* ensures all titles line up */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Description */
+.service-desc {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.6;
+  flex-grow: 1;           /* fills remaining space so bottom alignment works */
+  display: flex;
+  align-items: flex-start; /* align text to top inside description */
+  text-align: center;
+}
+
+/* Image container */
+.service-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  height: 60px; /* reserve space so all cards stay equal */
+}
+
+/* Image on top */
+.service-icon img {
+  width: 90px;   /* increased size */
+  height: 90px;  /* increased size */
+  object-fit: contain;
+}
+.service-icon-1 img { width: 100px; height: 110px; object-fit: contain; }
+.service-icon-2 img { width: 100px; height: 90px; object-fit: contain; }
+.service-icon-3 img { width: 100px; height: 200px; object-fit: contain; }
+.service-icon-4 img { width: 100px; height: 120px; object-fit: contain; }
+.service-icon-5 img { width: 120px; height: 105px; object-fit: contain; }
+.service-icon-6 img { width: 110px; height: 100px; object-fit: contain; }
+.service-icon-7 img { width: 150px; height: 105px; object-fit: contain; margin-top: 3px; }
+.service-icon-8 img { width: 140px; height: 100px; object-fit: contain; }
+.service-icon-9 img { width: 100px; height: 110px; object-fit: contain; }
+.service-icon-10 img { width: 120px; height: 100px; object-fit: contain; }
+.service-icon-11 img { width: 90px; height: 100px; object-fit: contain; }
+.service-icon-12 img { width: 138px; height: 110px; object-fit: contain; margin-top: 15px;}
+
+/* Popup hover effect */
+.service-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.service-card:hover {
+  transform: scale(1.05); /* slight zoom */
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15); /* popup shadow */
+  /* background: #ffffff; */
+  z-index: 2;
+}
+
+
+/* Hero Section */
+.service-hero {
+  width: 100%;
+  max-width: 560px;
+  margin: 0 auto 36px auto;
+  margin-top: 30px;
+  text-align: center;
+  background: #fff;
+  border-radius: 24px;
+  box-shadow: 0 6px 36px rgba(52,96,230,0.09);
+  padding: 30px 10px 20px 10px;
+  position: relative;
+  overflow: hidden;
+}
+.service-hero h1 {
+  font-weight: 900;
+  font-size: 2.6rem;
+  margin-bottom: 15px;
+  letter-spacing: 0.5px;
+  background: linear-gradient(90deg, #3460e6 60%, #ffad2d 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.service-hero-main {
+  color: #222;
+  font-size: 3rem;
+  font-weight: 900;
+  background: none;
+  -webkit-text-fill-color: initial;
+}
+.service-hero-accent {
+  color: #ffad2d;
+  background: linear-gradient(90deg, #3460e6 40%, #ffad2d 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+
+/* .service-card-1 { background: #fff6ec; }
+.service-card-2 { background: #e6f6ff; }
+.service-card-3 { background: #f0ffe6; }
+.service-card-4 { background: #f7e6ff; }
+.service-card-5 { background: #ffe6ec; }
+.service-card-6 { background: #e6fffa; }
+.service-card-7 { background: #f6ffe6; }
+.service-card-8 { background: #e6e9ff; }
+.service-card-9 { background: #fffbe6; }
+.service-card-10 { background: #e6fff2; }
+.service-card-11 { background: #fff0e6; } */
+
+/* .service-card-1 { background: #fff6ec; } */
+.service-card-2 { background: linear-gradient(to right, #7fb3e048, #0f85e759);  }
+/* .service-card-3 { background: #f0ffe6; } */
+.service-card-4 { background: linear-gradient(to right, #7fb3e048, #0f85e759);  }
+.service-card-5 { background: linear-gradient(to right, #7fb3e048, #0f85e759);  }
+/* .service-card-6 { background: #e6fffa; } */
+.service-card-7 { background: linear-gradient(to right, #7fb3e048, #0f85e759);  }
+/* .service-card-8 { background: #e6e9ff; } */
+/* .service-card-9 { background: #fffbe6; } */
+.service-card-10 { background: linear-gradient(to right, #7fb3e048, #0f85e759);}
+/* .service-card-11 { background: #fff0e6; } */
+.service-card-12 { background: linear-gradient(to right, #7fb3e048, #0f85e759); } 
+/* .service-card-12 { background: #ece6ff; } */
+
+
+
+
+/* Flip effect triggered by hovering on the card */
+.service-icon {
+  perspective: 1000px; /* adds 3D depth */
+}
+
+.service-icon img {
+  transition: transform 1.5s ease;
+  transform-style: preserve-3d;
+}
+
+.service-card:hover .service-icon img {
+  transform: rotateY(180deg); /* flips when hovering card */
+}

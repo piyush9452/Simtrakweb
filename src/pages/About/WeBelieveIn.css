@@ -1,0 +1,198 @@
+.business-steps-bg {
+  padding: 36px 12px 0 12px;
+  min-height: 350px;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+
+/* Hero Section */
+.webelievein-hero {
+  width: 100%;
+  max-width: 460px;
+  margin: 0 auto 36px auto;
+  margin-top: 30px;
+  text-align: center;
+  background: #fff;
+  border-radius: 24px;
+  box-shadow: 0 6px 36px rgba(52,96,230,0.09);
+  padding: 30px 10px 20px 10px;
+  position: relative;
+  overflow: hidden;
+}
+.webelievein-hero h1 {
+  font-weight: 900;
+  font-size: 2.6rem;
+  margin-bottom: 15px;
+  letter-spacing: 0.5px;
+  background: linear-gradient(90deg, #3460e6 60%, #ffad2d 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.webelievein-hero-main {
+  color: #222;
+  font-size: 2.6rem;
+  font-weight: 900;
+  background: none;
+  -webkit-text-fill-color: initial;
+}
+.webelievein-hero-accent {
+  color: #ffad2d;
+  background: linear-gradient(90deg, #3460e6 40%, #ffad2d 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-size: 2.6rem;
+  font-weight: 900;
+}
+.business-steps-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 26px;
+  height: 8px;
+  position: relative;
+}
+
+.bs-bar {
+  height: 4px;
+  margin: 0 1px;
+  border-radius: 2px;
+}
+.bs-bar1 { background: #f7931e; width: 60px;}
+.bs-bar2 { background: #ed1c24; width: 60px;}
+.bs-bar3 { background: #333; width: 80px;}
+.bs-bar4 { background: #32c4ec; width: 60px;}
+.bs-bar5 { background: #2256a6; width: 60px;}
+
+.business-steps-row {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 34px;
+  flex-wrap: wrap;
+}
+
+.business-step-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  min-width: 170px;
+  padding-bottom: 16px;
+  
+}
+.business-step-circle {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 12px solid #ccc;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 14px;
+  box-shadow: 0 2px 16px rgba(40,60,100,0.07);
+  transition: transform 0.5s ease-in-out;
+}
+
+.business-step-circle:hover  {
+ transform: scale(1.2); /* 20% zoom */
+}
+.business-step-inner-circle {
+  width: 120px;                 /* inner circle size */
+  height: 120px;
+  border-radius: 50%;           /* perfect circle */
+  border-style: solid;          /* solid border */
+  background: transparent;      /* no background */
+  display: flex;                /* center the icon */
+  align-items: center;
+  justify-content: center;
+}
+
+
+.business-step-title {
+  font-size: 1.22rem;
+  font-weight: 700;
+  margin-bottom: 0.4em;
+  margin-top: 8px;
+  text-align: center;
+}
+
+.business-step-title:nth-child(3) {
+  font-weight: 700;
+}
+
+.business-step-desc {
+  font-size: 1rem;
+  color: #646464;
+  text-align: center;
+  line-height: 1.4;
+  margin-bottom: 0.2em;
+}
+
+/* Responsive tweaks */
+@media (max-width: 900px) {
+  .business-steps-row {
+    gap: 18px;
+  }
+  .business-step-card {
+    width: 160px;
+    min-width: 120px;
+  }
+  .business-step-circle {
+    width: 100px;
+    height: 100px;
+  }
+  .business-step-inner-circle {
+    width: 60px;       /* inner circle size smaller on mobile */
+    height: 60px;
+  }
+
+  .business-step-inner-circle i {
+    font-size: 24px !important;  /* icon size smaller on mobile */
+  }
+}
+
+@media (max-width: 500px) {
+  .business-steps-bg{
+    flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+  }
+  .business-step-circle {
+    width: 80px;
+    height: 80px;
+  }
+  .business-step-inner-circle {
+    width: 40px;       /* inner circle aur chhota mobile ke liye */
+    height: 40px;
+  }
+
+  .business-step-inner-circle i {
+      font-size: 18px !important;    /* icon aur chhota mobile ke liye */
+  }
+
+  .business-step-card {
+    width: 120px;
+    min-width: 100px;
+  }
+}
+
+
+/* animation */
+
+/* Initial state for heading and cards */
+.webelievein-hero,
+.business-step-card {
+  opacity: 0;
+  transform: translateY(50px); /* cards niche se upar, heading upar se niche bhi same */
+  transition: all 0.8s ease;
+}
+
+/* Show class triggers animation */
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}

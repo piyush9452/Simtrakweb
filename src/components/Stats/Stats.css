@@ -1,0 +1,223 @@
+/* Stats section styling */
+
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Helvetica, Arial, sans-serif;
+} */
+
+
+
+ /* Hero Section */
+.stats-hero {
+  width: 100%;
+  max-width: 200px;
+  /* margin: 0 auto 36px auto; */
+  margin-top: 30px;
+  text-align: center;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 6px 36px rgba(52,96,230,0.09);
+  /* padding: 28px 6px 6px 6px; */
+  position: relative;
+  top: 10px;
+  left: 10px;
+  overflow: hidden;
+}
+.stats-hero h1 {
+  font-weight: 900;
+  font-size: 2.6rem;
+  margin-bottom: 15px;
+  letter-spacing: 0.5px;
+  background: linear-gradient(90deg, #3460e6 60%, #ffad2d 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.stats-hero-main {
+  color: #222;
+  font-size: 1.4rem;
+  font-weight: 800;
+  background: none;
+  -webkit-text-fill-color: initial;
+}
+.stats-hero-accent {
+  color: #ffad2d;
+  background: linear-gradient(90deg, #3460e6 40%, #ffad2d 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-size: 1.4rem;
+  font-weight: 800;
+}
+
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: Helvetica, Arial, sans-serif;
+  color: #1e2a36;
+  text-align: center;
+  margin-bottom: -30px;
+  margin-top: 40px;
+}
+
+.stats-section {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  left: 300px;
+  top: -80px;
+  flex-wrap: wrap;
+  /* padding: 25px 15px; */
+  position: relative;
+  /* left: 110px; */
+  background-color: #1e2a36;
+  max-width: 900px;
+  max-height: 200px;
+  /* margin: 40px auto; */
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.stat-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  /* padding: 30px; */
+  margin: 10px;
+  text-align: center;
+  flex: 1;
+  min-width: 200px;
+  max-width: 300px;
+  max-height: 180px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stat-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.icon {
+  font-size: 2.5rem;
+  color: #0078ff;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.number {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.label {
+  font-size: 1.1rem;
+  color: #666;
+}
+
+/* Responsive styles */
+@media (max-width: 992px) {
+  .stats-section {
+    max-width: 90%;
+    padding: 40px 15px;
+  }
+  
+  .stat-card {
+    min-width: 180px;
+    padding: 25px;
+  }
+  
+  .number {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .stats-section {
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 15px;
+  }
+  
+  .stat-card {
+    width: 100%;
+    max-width: 300px;
+    margin: 10px 0;
+  }
+  
+  .icon {
+    font-size: 2.2rem;
+  }
+  
+  .number {
+    font-size: 2rem;
+  }
+  
+  .label {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .stats-section {
+    max-width: 95%;
+    padding: 25px 10px;
+    margin: 30px auto;
+  }
+  
+  .stat-card {
+    padding: 20px;
+    margin: 8px 0;
+  }
+  
+  .icon {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .number {
+    font-size: 1.8rem;
+    margin-bottom: 5px;
+  }
+}
+
+
+/* Animation */
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+
+
+
+
+.stats-hero,
+.stat-card {
+  opacity: 0;           /* initially hidden */
+  transform: translateY(50px); /* neeche se upar aaye */
+  transition: all 0.8s ease;
+}
+
+/* Jab element viewport me aaye */
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}

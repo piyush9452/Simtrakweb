@@ -1,0 +1,213 @@
+.cf06-wrapper {
+  font-family: Arial, sans-serif;
+  background: #f8faff;
+  min-height: 100vh;
+  padding: 40px 0;
+}
+/* Hero Section */
+.Cf06-hero {
+  width: 100%;
+  max-width: 360px;
+  margin: 0 auto 36px auto;
+  text-align: center;
+  background: #fff;
+  border-radius: 24px;
+  box-shadow: 0 6px 36px rgba(52,96,230,0.09);
+  padding: 18px 6px 10px 6px;
+  position: relative;
+  overflow: hidden;
+}
+.Cf06-hero h1 {
+  font-weight: 900;
+  font-size: 2.6rem;
+  margin-bottom: 15px;
+  letter-spacing: 0.5px;
+  background: linear-gradient(90deg, #3460e6 60%, #ffad2d 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.Cf06-hero-main {
+  color: #222;
+  font-size: 2rem;
+  font-weight: 900;
+  background: none;
+  -webkit-text-fill-color: initial;
+}
+.Cf06-hero-accent {
+  color: #ffad2d;
+  background: linear-gradient(90deg, #3460e6 40%, #ffad2d 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+.cf06-title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.cf06-main {
+  margin: 0 auto;
+  max-width: 900px;
+  display: flex;
+  background: #fff;
+  box-shadow: 0 0 18px rgba(0,0,0,0.13);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.cf06-form-side {
+  flex: 1;
+  padding: 40px;
+  min-width: 320px;
+}
+
+.cf06-form-side h3 {
+  margin-bottom: 24px;
+  font-weight: 500;
+}
+
+.cf06-row {
+  display: flex;
+  gap: 18px;
+  margin-bottom: 20px;
+}
+
+.cf06-field {
+  flex: 1;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.cf06-field label {
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.cf06-field input,
+.cf06-field textarea {
+  width: 100%;
+  padding: 10px 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 15px;
+}
+
+.cf06-field textarea {
+  resize: none;
+}
+
+.cf06-btn {
+  background: #20303c;
+  color: #fff;
+  padding: 10px 24px;
+  border: none;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(40,81,227,0.13);
+  margin-top: 6px;
+}
+
+.cf06-map-side {
+  flex: 1;
+  min-width: 320px;
+  min-height: 400px;
+  /* maintain aspect ratio */
+  display: flex;
+  align-items: stretch;
+}
+
+.cf06-map-side iframe {
+  width: 100%;
+  height: 100%;
+  min-height: 400px;
+  border: none;
+}
+
+.cf06-contact-details {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.cf06-contact-item {
+  text-align: center;
+  min-width: 180px;
+}
+
+.cf06-icon {
+  background: #20303c;
+  color: #fff;
+  border-radius: 50%;
+  width: 54px;
+  height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 14px auto;
+  font-size: 27px;
+}
+.cf06-contact-item a {
+  color: #20303c;
+  text-decoration: none;
+}
+
+@media (max-width: 900px) {
+  .cf06-main {
+    flex-direction: column;
+  }
+  .cf06-map-side {
+    min-height: 220px;
+  }
+}
+
+
+/* Animate each letter one after another */
+.cf06-hero h1 span:nth-child(1) { animation-delay: 0.1s; }
+.cf06-hero h1 span:nth-child(2) { animation-delay: 0.2s; }
+.cf06-hero h1 span:nth-child(3) { animation-delay: 0.3s; }
+.cf06-hero h1 span:nth-child(4) { animation-delay: 0.4s; }
+.cf06-hero h1 span:nth-child(5) { animation-delay: 0.5s; }
+/* ➝ Continue as many nth-child as needed for all letters */
+
+/* Popup keyframes */
+@keyframes letterPop {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.Cf06-hero {
+  opacity: 0;
+  transform: translateY(40px);
+  animation: cardPop 0.8s ease-out forwards;
+  animation-delay: 0.4s; /* wait for heading to finish first */
+  transform: translateY(-25px);
+}
+
+
+/* Step 2: Card popup after heading */
+.cf06-main {
+  opacity: 0;
+  transform: translateY(40px);
+  animation: cardPop 0.8s ease-out forwards;
+  animation-delay: 0.8s; /* wait for heading to finish first */
+}
+
+@keyframes cardPop {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

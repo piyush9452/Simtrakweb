@@ -1,0 +1,235 @@
+/* ---------------- Founder Testimonial Section ---------------- */
+#founder-testimonial-section {
+  min-height: calc(100vh - 80px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;   /* vertical centering */
+  align-items: center;       /* horizontal centering */
+  padding: 40px 20px;
+  background-color: #f8faff;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+/* Hero Section */
+.Founder-hero {
+  width: 100%;
+  max-width: 560px;
+  margin: 0 auto 36px auto;
+  margin-top: 30px;
+  text-align: center;
+  background: #fff;
+  border-radius: 24px;
+  box-shadow: 0 6px 36px rgba(52,96,230,0.09);
+  padding: 30px 10px 20px 10px;
+  position: relative;
+  overflow: hidden;
+}
+.Founder-hero h1 {
+  font-weight: 900;
+  font-size: 2.6rem;
+  margin-bottom: 15px;
+  letter-spacing: 0.5px;
+  background: linear-gradient(90deg, #3460e6 60%, #ffad2d 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.Founder-hero-main {
+  color: #222;
+  font-size: 2rem;
+  font-weight: 900;
+  background: none;
+  -webkit-text-fill-color: initial;
+}
+.Founder-hero-accent {
+  color: #ffad2d;
+  background: linear-gradient(90deg, #3460e6 40%, #ffad2d 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+#founder-testimonial-heading {
+  font-size: 28px;
+  margin-bottom: 30px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* ---------------- Testimonial Card ---------------- */
+#founder-testimonial-card {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 30px;
+  max-width: 900px;
+  width: 100%;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+/* ---------------- Image ---------------- */
+#founder-testimonial-image {
+  flex: 0 0 270px;
+  width: 290px;
+  height: 260px;
+  overflow: hidden;
+  border-radius: 0px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #333;
+  border-right-width: 0;
+  border-top-width:0 ;
+  padding:0px 0px 10px 10px ;
+}
+
+#founder-testimonial-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ---------------- Content ---------------- */
+#founder-testimonial-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#founder-testimonial-text {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #555;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+/* ---------------- Footer ---------------- */
+#founder-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #f39c12; /* orange */
+}
+
+#founder-role {
+  font-size: 15px;
+  color: #777;
+  border-bottom: 2px solid #777;
+  display: inline-block;
+  padding-bottom: 3px;
+}
+
+/* ---------------- Responsive ---------------- */
+@media (max-width: 768px) {
+  #founder-testimonial-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  #founder-testimonial-content {
+    text-align: center;
+  }
+
+  #founder-testimonial-text {
+    text-align: justify;
+  }
+}
+/* Step 1: Letter by letter popup for heading */
+.Founder-hero h1 {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.Founder-hero h1 span {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: letterPop 0.9s forwards;
+}
+
+/* Animate each letter one after another */
+.Founder-hero h1 span:nth-child(1) { animation-delay: 0.1s; }
+.Founder-hero h1 span:nth-child(2) { animation-delay: 0.2s; }
+.Founder-hero h1 span:nth-child(3) { animation-delay: 0.3s; }
+.Founder-hero h1 span:nth-child(4) { animation-delay: 0.4s; }
+.Founder-hero h1 span:nth-child(5) { animation-delay: 0.5s; }
+/* ➝ Continue as many nth-child as needed for all letters */
+
+/* Popup keyframes */
+@keyframes letterPop {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Step 2: Card popup after heading */
+#founder-testimonial-card {
+  opacity: 0;
+  transform: translateY(40px);
+  animation: cardPop 0.8s ease-out forwards;
+  animation-delay: 0.5s; /* wait for heading to finish first */
+}
+
+@keyframes cardPop {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.Founder-hero h1 {
+  font-weight: 900;
+  font-size: 2.6rem;   /* keep big size on desktop */
+  margin-bottom: 15px;
+  letter-spacing: 0.5px;
+  background: linear-gradient(90deg, #3460e6 60%, #ffad2d 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+
+  white-space: normal;     /* allow wrapping on small screens */
+  word-break: break-word;  /* break if a word is too long */
+  text-align: left;        /* left align since it’s at the side */
+}
+
+/* Prevent wrapping on large screens */
+@media (min-width: 992px) {
+  .Founder-hero h1 {
+    white-space: nowrap;   /* keep single line on desktop */
+  }
+}
+.Founder-hero h1 {
+  font-weight: 900;
+  font-size: 2.6rem;
+  margin-bottom: 15px;
+  letter-spacing: 0.5px;
+  background: linear-gradient(90deg, #3460e6 60%, #ffad2d 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+
+  white-space: normal;      /* allow wrapping */
+  word-break: break-word;
+  text-align: center;       /* center when it wraps */
+  line-height: 1.2;         /* tighter line spacing */
+}
+
+/* On larger screens keep it one line and left aligned */
+@media (min-width: 992px) {
+  .Founder-hero h1 {
+    white-space: nowrap;    /* single line */
+    text-align: left;       /* left aligned */
+  }
+}

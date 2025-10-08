@@ -1,0 +1,128 @@
+/* Navbar styling */
+nav {
+  background: linear-gradient(to right, #4c545b, #284054);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 6vw;
+  font-family: "Georgia Pro", Georgia, serif;
+  position: relative;
+}
+
+.logo img {
+  max-width: 150px;
+  min-width: 80px;
+  width: 150px;
+  background-color: white;
+  height: auto;
+  border-radius: 15px;
+  /* margin-left: -60px; */
+  position: relative;
+  right: 40px;
+  padding: 5px;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 2.2rem;
+  cursor: pointer;
+  color: white;
+  padding: 10px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 2vw;
+  margin-right: -50px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+  padding: 0;
+  border-radius: 4px;
+}
+
+.nav-links a:hover,
+.nav-links a:focus {
+  color: #87ceeb;
+  background: rgba(255,255,255,0.07);
+}
+
+.login-btn {
+  background: #50869c;
+  color: white !important;
+  font-weight: 600;
+  border-radius: 4px;
+  padding: 0.5em 1.2em !important;
+  transition: background 0.2s;
+}
+
+.login-btn:hover,
+.login-btn:focus {
+  background: #fff;
+  color: #0078ff !important;
+}
+
+/* Responsive - Tablets & Below */
+@media (max-width: 900px) {
+  nav {
+    padding: 10px 3vw;
+  }
+  .nav-links {
+    gap: 1.4vw;
+  }
+  .login-btn {
+    margin-right: 40px;
+  }
+  .logo img {
+    position: relative;
+    left: 20px;
+}
+}
+
+/* Responsive - Mobiles */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    background: linear-gradient(to right, #4c545b, #284054);
+    margin: 0;
+    padding: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    z-index: 100;
+  }
+
+  .nav-links.show {
+    max-height: 600px;
+    padding: 10px 10;
+  }
+
+  .nav-links li {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .nav-links a {
+    display: block;
+    padding: 10px;
+  }
+  
+  .login-btn {
+    display: inline-block;
+    margin: 5px 15px;
+  }
+}
