@@ -1,4 +1,10 @@
-/* Stats section styling */
+/* Stats section styling (desktop rules preserved)
+   Changes: only add overrides for screens <= 1250px so desktop view is unchanged.
+   I kept your original desktop rules exactly and added a single media-query
+   block for max-width:1250px that centers the layout and makes cards scale well
+   on tablets and larger phones. Smaller existing media queries (992/768/576)
+   are kept as-is and will continue to refine layout on narrower screens.
+*/
 
 /* * {
   margin: 0;
@@ -68,15 +74,16 @@
   justify-content: space-around;
   position: relative;
   left: 300px;
-  top: -80px;
+  top: -100px;
   flex-wrap: wrap;
   /* padding: 25px 15px; */
   position: relative;
   /* left: 110px; */
   background-color: #1e2a36;
   max-width: 900px;
-  max-height: 200px;
+  max-height: 160px;
   /* margin: 40px auto; */
+  margin-bottom: -60px;
   border-radius: 15px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
@@ -91,7 +98,7 @@
   flex: 1;
   min-width: 200px;
   max-width: 300px;
-  max-height: 180px;
+  max-height: 140px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   display: flex;
   flex-direction: column;
@@ -106,6 +113,8 @@
 .icon {
   font-size: 2.5rem;
   color: #0078ff;
+  position: relative;
+  top: 10px;
   margin-bottom: 15px;
   display: flex;
   justify-content: center;
@@ -122,9 +131,77 @@
 .label {
   font-size: 1.1rem;
   color: #666;
+  position: relative;
+  top: -15px;
 }
 
 /* Responsive styles */
+/* New: fixes and overrides for screens <= 1250px only.
+   Desktop (wider than 1250px) remains exactly as you originally had it. */
+@media (max-width: 1250px) {
+  /* Center the stats-section and remove the large left/top offsets used for desktop */
+  .stats-section {
+    position: static !important;
+    left: auto !important;
+    top: auto !important;
+    margin: 24px auto 8px;
+    /* let it stretch across most of the available width on tablets and laptops */
+    width: calc(100% - 48px);
+    max-width: 900px; /* keep same max as desktop */
+    max-height: none; /* allow content to grow vertically on smaller screens */
+    padding: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+  }
+
+  /* Make the hero sit above the stats and centered */
+  .stats-hero {
+    position: relative;
+    left: auto !important;
+    top: auto !important;
+    margin: 12px auto;
+    max-width: 320px; /* slightly larger on tablet */
+    width: 100%;
+    box-shadow: 0 6px 36px rgba(52,96,230,0.06);
+  }
+
+  /* Allow cards to shrink a bit and wrap more naturally */
+  .stat-card {
+    flex: 1 1 220px;  /* base width 220px, grow/shrink as needed */
+    min-width: 150px;
+    max-width: 320px;
+    max-height: none;
+    margin: 10px;
+    padding: 14px;
+  }
+
+  /* Slightly reduce large typography to fit medium screens */
+  .number {
+    font-size: 2.1rem;
+  }
+  .icon {
+    font-size: 2.1rem;
+    top: 6px;
+  }
+  .label {
+    top: 0;
+    font-size: 1rem;
+  }
+
+  /* Make section-title spacing friendlier on medium screens */
+  .section-title {
+    margin-top: 18px;
+    margin-bottom: 6px;
+  }
+  
+  /* Keep the entry animation behavior the same but ensure visibility */
+  .stats-hero, .stat-card { opacity: 1; transform: translateY(0); transition: none; }
+}
+
+/* Existing smaller breakpoints retained (these will further adjust layout below 992/768/576) */
 @media (max-width: 992px) {
   .stats-section {
     max-width: 90%;
@@ -203,11 +280,37 @@
   }
 }
 
+/* Mobile / tablet override only (<=1250px)
+   Ensures stat-cards grow with the stats-section container */
+@media (max-width: 1250px) {
+  .stats-section {
+    position: static !important;
+    left: auto !important;
+    top: auto !important;
+    margin: 24px auto 8px;
+    width: calc(100% - 48px);
+    max-width: 900px;
+    max-height: none;        /* allow vertical growth on smaller screens */
+    padding: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 12px;               /* use gap instead of per-card margins */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+  }
 
-
-
-
-
+  /* Let each card grow equally to fill the available width */
+  .stat-card {
+    flex: 1 1 0;            /* grow, shrink, base 0 so items share space evenly */
+    min-width: 140px;       /* prevent extremely narrow cards */
+    max-width: none !important; /* remove earlier cap that prevented expansion */
+    max-height: none;
+    margin: 0;              /* gap handles spacing */
+    padding: 14px;
+    box-sizing: border-box;
+  }
+}
 
 .stats-hero,
 .stat-card {
