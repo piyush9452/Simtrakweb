@@ -9,7 +9,7 @@
 /* Enhanced smooth scrolling */
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 80px; /* Account for fixed navbar */
+  scroll-padding-top: 80px; /* Account for the fixed navbar */
 }
 
 /* Custom scrollbar for webkit browsers */
