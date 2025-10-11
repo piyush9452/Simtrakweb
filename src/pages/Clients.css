@@ -110,14 +110,14 @@
 }
 
 .logo-circle img {
-  width: 65%;
-  height: 65%;
+  width: 87%;
+  height: 75%;
   object-fit: contain;
   border-radius: 50%;
   z-index: 2;
   position: relative;
   background: #fff;
-  padding: 10px;
+  padding: 8px;
 }
 
 /* gradient border pseudo-element */

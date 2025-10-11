@@ -1,7 +1,6 @@
 import React from 'react';
 import Hero from '../components/Hero/Hero';
 import Stats from '../components/Stats/Stats';
-import ReviewSlider from '../components/ReviewSlider/ReviewSlider';
 
 // Import About components
 import Founder from './About/Founder';
@@ -10,7 +9,7 @@ import Founder from './About/Founder';
 import Services from './Services';
 
 // Import Clients component
-import Clients from './Clients';
+import Clients from './Clients';  
 
 // Import Contact component
 import Contact from './Contact';
@@ -18,13 +17,14 @@ import Contact from './Contact';
 // Import Internships component
 import Internships from './Internships';
 
+import ReviewSlider from '../components/ReviewSlider/ReviewSlider';
+
 const Home: React.FC = () => {
   return (
     <>
       <section id="home">
         <Hero />
         <Stats />
-        <ReviewSlider />
       </section>
       <section id="about">
         <Founder />
@@ -37,6 +37,7 @@ const Home: React.FC = () => {
       </section>
       <section id="internships">
         <Internships />
+        <ReviewSlider />
       </section>
       <section id="contact">
         <Contact />

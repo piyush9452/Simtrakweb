@@ -1,11 +1,27 @@
 import React from "react";
 import "./Clients.css";
 import ClientTestimonial from "./Client-testimonial";
+import Adore from "../assets/Adore.webp";
+import Lula from "../assets/lula.webp";
+import Garg from "../assets/garg.webp";
+import Inseeds from "../assets/inseeds.webp";
+import Sehgal from "../assets/sehgal.jpg";
+import Lset from "../assets/LSeT.webp";
+import Storewise from "../assets/storewise.jpg";
+import Clienttell from "../assets/clientell.webp";
+import Fortale from "../assets/fortale.jpg";
+import Desilaundry from "../assets/desilaundry.webp";
+import Sawec from "../assets/sawec.jpg";
+import Encodiq from "../assets/encodiq.webp";
+import Foreword from "../assets/foreword-1.webp";
+import Weeho from "../assets/weeho.webp";
+import Infovue from "../assets/infovue.webp";
+import Sochsutra from "../assets/shubhank.webp";
 
 const clients = [
   {
     name: "ADORE",
-    logo: "https://i0.wp.com/simtrak.in/wp-content/uploads/2023/05/Final-logo.png?resize=300&ssl=1E",
+    logo: Adore,
     testimonial: "Motivating youth for positive action through educational programs.",
     person: "ADORE",
     color: "linear-gradient(135deg, #667eea, #764ba2)",
@@ -13,7 +29,7 @@ const clients = [
   },
   {
     name: "LULA",
-    logo: "https://i0.wp.com/simtrak.in/wp-content/uploads/2023/05/logo-orange-e1696652807805.png?fit=300%2C121&ssl=1",
+    logo: Lula,
     testimonial: "Innovative solutions for modern retail experiences.",
     person: "LULA",
     color: "linear-gradient(135deg, #a18cd1, #fbc2eb)",
@@ -21,7 +37,7 @@ const clients = [
   },
   {
     name: "GARG",
-    logo: "https://i0.wp.com/simtrak.in/wp-content/uploads/2023/03/6-1.png?w=300&ssl=1",
+    logo: Garg,
     testimonial: "Trusted name in the manufacturing industry.",
     person: "GARG",
     color: "linear-gradient(135deg, #f6d365, #fda085)",
@@ -29,31 +45,31 @@ const clients = [
   },
   {
     name: "INSEEDS.IN",
-    logo: "https://i0.wp.com/simtrak.in/wp-content/uploads/2023/10/a1.jpg?w=300&ssl=1",
+    logo: Inseeds,
     testimonial: "Empowering agriculture with technology.",
     person: "INSEEDS.IN",
     color: "linear-gradient(135deg, #89f7fe, #66a6ff)",
     borderGradient: "linear-gradient(135deg, #596768ff, #66ffffff)",
   },
   {
-    name: "GARG",
-    logo: "https://i0.wp.com/simtrak.in/wp-content/uploads/2023/05/r1-removebg-preview-1.png?w=300&ssl=1",
+    name: "Sehgal Foundation",
+    logo: Sehgal,
     testimonial: "Working for rural development and community upliftment.",
     person: "SEHGAL FOUNDATION",
     color: "linear-gradient(135deg, #89f7fe, #66a6ff)",
     borderGradient: "linear-gradient(135deg, #89f7fe, #66a6ff)",
   },
   {
-    name: "GARG",
-    logo: "https://i0.wp.com/simtrak.in/wp-content/uploads/2023/10/LSeT.jpeg?w=300&ssl=1https://i0.wp.com/simtrak.in/wp-content/uploads/2023/10/LSeT.jpeg?w=300&ssl=1",
+    name: "Life Science Educational Trust",
+    logo: Lset,
     testimonial: "Promoting science education and research.",
     person: "LIFE SCIENCE EDUCATIONAL TRUST",
     color: "linear-gradient(135deg, #89f7fe, #66a6ff)",
     borderGradient: "linear-gradient(135deg, #89f7fe, #8e0c44ff)",
   },
   {
-    name: "GARG",
-    logo: "https://i0.wp.com/simtrak.in/wp-content/uploads/2023/10/storewise-removebg-preview.png?w=300&ssl=1",
+    name: "Storewise",
+    logo: Storewise,
     testimonial: "Smart inventory management for businesses.",
     person: "Storewise",
     color: "linear-gradient(135deg, #89f7fe, #66a6ff)",
@@ -61,72 +77,72 @@ const clients = [
 
   },
   {
-    name: "GARG",
-    logo: "https://i0.wp.com/simtrak.in/wp-content/uploads/2023/10/client.jpg?w=300&ssl=1",
+    name: "ClientTell",
+    logo: Clienttell,
     testimonial: "Client communication made easy.",
     person: "ClientTell",
     color: "linear-gradient(135deg, #89f7fe, #66a6ff)",
     borderGradient: "linear-gradient(135deg, #89f7fe, #66d1ffff)",
   },
   {
-    name: "GARG",
-    logo: "https://i0.wp.com/simtrak.in/wp-content/uploads/2023/10/fortale-removebg-preview.png?fit=300%2C136&ssl=1",
+    name: "Fortale",
+    logo: Fortale,
     testimonial: "Premium living solutions for modern families.",
     person: "Fortale Living",
     color: "linear-gradient(135deg, #89f7fe, #66a6ff)",
     borderGradient: "linear-gradient(135deg, #feb089ff, #66a6ff)",
   },
   {
-    name: "GARG",
-    logo: "https://i0.wp.com/simtrak.in/wp-content/uploads/2023/09/desi_laundry-removebg-preview.png?w=300&ssl=1",
+    name: "Laundry Services",
+    logo: Desilaundry,
     testimonial: "Laundry services with a local touch.",
     person: "Desi Laundry",
     color: "linear-gradient(135deg, #89f7fe, #66a6ff)",
     borderGradient: "linear-gradient(135deg, #052f32ff, #ff66adff)",
   },
   {
-    name: "GARG",
-    logo: "https://i0.wp.com/simtrak.in/wp-content/uploads/2023/05/r2.jpg?w=300&ssl=1",
+    name: "SAWEC",
+    logo: Sawec,
     testimonial: "Safe Water Education Centre.",
     person: "SAWEC",
     color: "linear-gradient(135deg, #89f7fe, #66a6ff)",
     borderGradient: "linear-gradient(135deg, #614b5fff, #66a6ff)",
   },
   {
-    name: "GARG",
-    logo: "https://i0.wp.com/simtrak.in/wp-content/uploads/2023/03/4-1.png?w=300&ssl=1",
+    name: "EncodiQ",
+    logo: Encodiq,
     testimonial: "Smart tech for efficient coding.",
     person: "EncodiQ",
     color: "linear-gradient(135deg, #89f7fe, #66a6ff)",
     borderGradient: "linear-gradient(135deg, #89f7fe, #0446a2ff)",
   },
   {
-    name: "GARG",
-    logo: "https://i0.wp.com/simtrak.in/wp-content/uploads/2023/05/foreword-1.png?w=300&ssl=1",
+    name: "foreword",
+    logo: Foreword,
     testimonial: "Bringing new perspectives to education.",
     person: "Foreword",
     color: "linear-gradient(135deg, #89f7fe, #66a6ff)",
     borderGradient: "linear-gradient(135deg, #d1fe89ff, #1e3555ff)",
   },
   {
-    name: "GARG",
-    logo: "https://i0.wp.com/simtrak.in/wp-content/uploads/2023/09/weeho-removebg-preview.png?fit=300%2C102&ssl=1",
+    name: "Weeho",
+    logo: Weeho,
     testimonial: "Euphoric moments captured beautifully.",
     person: "Weeho",
     color: "linear-gradient(135deg, #89f7fe, #66a6ff)",
     borderGradient: "linear-gradient(135deg, #d9fe89ff, #66ffdbff)",
   },
   {
-    name: "GARG",
-    logo: "https://i0.wp.com/simtrak.in/wp-content/uploads/2023/10/infouve.jpg?w=300&ssl=1",
+    name: "Infovue",
+    logo: Infovue,
     testimonial: "Empowering education through information.",
     person: "Infovue",
     color: "linear-gradient(135deg, #89f7fe, #66a6ff)",
     borderGradient: "linear-gradient(135deg, #bc89feff, #66ffb0ff)",
   },
   {
-    name: "GARG",
-    logo: "https://i0.wp.com/simtrak.in/wp-content/uploads/2022/09/1-e1697787187118.png?w=300&ssl=1",
+    name: "Soch Sutra",
+    logo: Sochsutra,
     testimonial: "Creative thinking for social change.",
     person: "Soch Sutra",
     color: "linear-gradient(135deg, #89f7fe, #66a6ff)",
