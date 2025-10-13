@@ -101,7 +101,7 @@ const ContactForm06: React.FC = () => {
           ></iframe>
         </div>
       </div>
-      <div className="cf06-contact-details">
+      {/* <div className="cf06-contact-details">
         <div className="cf06-contact-item">
           <div className="cf06-icon"><i className="fa-solid fa-location-dot"></i></div>
           <div>
@@ -130,7 +130,7 @@ const ContactForm06: React.FC = () => {
             <a href="https://simtrak.in/">simtrak.in</a>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
