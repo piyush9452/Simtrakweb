@@ -1,6 +1,5 @@
-import React from 'react';
-
-import { useState } from "react";
+import React, { useState } from "react";
+import emailjs from "@emailjs/browser";
 import "./Contact.css";
 
 const ContactForm06: React.FC = () => {
@@ -11,6 +10,8 @@ const ContactForm06: React.FC = () => {
     message: "",
   });
 
+  const [loading, setLoading] = useState(false);
+
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
@@ -19,19 +20,47 @@ const ContactForm06: React.FC = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // You can implement send logic here
-    alert("Message Sent!");
+    setLoading(true);
+
+    const serviceId = "service_3va11pa";
+    const templateId = "template_c15gq5d";
+    const publicKey = "9_BFhJ6IWn5rwx9x1";
+
+    emailjs
+      .send(
+        serviceId,
+        templateId,
+        {
+          name: form.name,
+          email: form.email,
+          title: form.subject, // template variable: {{title}}
+          message: form.message,
+        },
+        publicKey
+      )
+      .then(
+        () => {
+          alert("✅ Message sent successfully!");
+          setForm({ name: "", email: "", subject: "", message: "" });
+          setLoading(false);
+        },
+        (error) => {
+          console.error("FAILED...", error);
+          alert("❌ Failed to send message. Please try again later.");
+          setLoading(false);
+        }
+      );
   };
 
   return (
     <div className="cf06-wrapper">
-       <div className="Cf06-hero">
+      <div className="Cf06-hero">
         <h1>
           <span className="Cf06-hero-main">Contact </span>
           <span className="Cf06-hero-accent">Form</span>
         </h1>
-        
       </div>
+
       <div className="cf06-main">
         <div className="cf06-form-side">
           <h3>Contact Us</h3>
@@ -82,11 +111,12 @@ const ContactForm06: React.FC = () => {
                 rows={4}
               />
             </div>
-            <button className="cf06-btn" type="submit">
-              Send Message
+            <button className="cf06-btn" type="submit" disabled={loading}>
+              {loading ? "Sending..." : "Send Message"}
             </button>
           </form>
         </div>
+
         <div className="cf06-map-side">
           <iframe
             title="map"
@@ -101,36 +131,6 @@ const ContactForm06: React.FC = () => {
           ></iframe>
         </div>
       </div>
-      {/* <div className="cf06-contact-details">
-        <div className="cf06-contact-item">
-          <div className="cf06-icon"><i className="fa-solid fa-location-dot"></i></div>
-          <div>
-            <b>Address:</b> Simtrak Solutions,<br />
-             JBS Haldane Avenue, Kolkata 700046
-          </div>
-        </div>
-        <div className="cf06-contact-item">
-          <div className="cf06-icon"><i className="fa-solid fa-phone"></i></div>
-          <div>
-            <b>Phone:</b>{" "}
-            <a href="tel:1235235598">+91 9883585647</a>
-          </div>
-        </div>
-        <div className="cf06-contact-item">
-          <div className="cf06-icon"><i className="fa-solid fa-envelope"></i></div>
-          <div>
-            <b>Email:</b>{" "}
-            <a href="contact@simtrak.in">contact@simtrak.in</a>
-          </div>
-        </div>
-        <div className="cf06-contact-item">
-          <div className="cf06-icon"><i className="fa-solid fa-earth-americas"></i></div>
-          <div>
-            <b>Website:</b>{" "}
-            <a href="https://simtrak.in/">simtrak.in</a>
-          </div>
-        </div>
-      </div> */}
     </div>
   );
 };
