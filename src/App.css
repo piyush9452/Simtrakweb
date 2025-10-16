@@ -32,7 +32,7 @@ html {
 
 .App {
   background-color: #f8faff;
-  /* background: linear-gradient(to right, #c6d3df6c, #93a3af7f);  */
+  /* background: linear-gradient(to right #c6d3df6c, #93a3af7f);  */
   color: #20303c;
   min-height: 100vh;
   display: flex;
