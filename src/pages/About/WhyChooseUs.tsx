@@ -97,7 +97,8 @@ const WhyChooseUs: React.FC = () => (
       {/* Left Steps */}
       <div className="why-steps left">
         {leftSteps.map((step, i) => (
-          <div className={`why-step why-step-${i}`} key={`left-${i}`}>
+          <div className={`why-step left-step-${i}`} key={`left-${i}`}>
+
             <div
               className={`why-step-circle why-step-circle-${i}`}
               style={{ borderColor: step.borderColor }}
@@ -150,7 +151,7 @@ const WhyChooseUs: React.FC = () => (
       {/* Right Steps */}
       <div className="why-steps right">
         {rightSteps.map((step, i) => (
-          <div className={`why-step why-step-${i}`} key={`right-${i}`}>
+          <div className={`why-step right-step-${i}`} key={`right-${i}`}>
             <div
               className={`why-step-circle why-step-circle-${i}`}
               style={{ borderColor: step.borderColor }}
