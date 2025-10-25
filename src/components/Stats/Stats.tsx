@@ -53,7 +53,7 @@ const Stats: React.FC = () => {
             <div className="icon">
               <FontAwesomeIcon icon={faUsers} />
             </div>
-            <div className="number">50</div>
+            <div className="number">50+</div>
           </div>
           <div className="label">Total Members</div>
         </div>
