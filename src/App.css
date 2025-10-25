@@ -4,12 +4,16 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Helvetica, Arial, sans-serif;
+  
+  
 }
+
 
 /* Enhanced smooth scrolling */
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 80px; /* Account for the fixed navbar */
+  
 }
 
 /* Custom scrollbar for webkit browsers */
@@ -31,7 +35,7 @@ html {
 }
 
 .App {
-  background-color: #f8faff;
+ 
   /* background: linear-gradient(to right #c6d3df6c, #93a3af7f);  */
   color: #20303c;
   min-height: 100vh;

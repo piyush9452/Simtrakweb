@@ -6,7 +6,7 @@
   justify-content: center;   /* vertical centering */
   align-items: center;       /* horizontal centering */
   padding: 40px 20px;
-  background-color: #f8faff;
+  
   box-sizing: border-box;
   text-align: center;
 }

@@ -37,28 +37,38 @@ const Stats: React.FC = () => {
 
       <section className="stats-section">
         <div className="stat-card">
-          <div className="icon">
-            <FontAwesomeIcon icon={faBriefcase} />
-          </div>
-          <div className="number">12+</div>
-          <div className="label">Years of Experience</div>
-        </div>
+  <div className="icon-number">
+    <div className="icon">
+      <FontAwesomeIcon icon={faBriefcase} />
+    </div>
+    <div className="number">12+</div>
+  </div>
+  <div className="label">Years of Experience</div>
+</div>
+
+
 
         <div className="stat-card">
-          <div className="icon">
-            <FontAwesomeIcon icon={faUsers} />
+          <div className="icon-number">
+            <div className="icon">
+              <FontAwesomeIcon icon={faUsers} />
+            </div>
+            <div className="number">50</div>
           </div>
-          <div className="number">50</div>
           <div className="label">Total Members</div>
         </div>
 
         <div className="stat-card">
-          <div className="icon">
-            <FontAwesomeIcon icon={faHandshake} />
+          <div className="icon-number">
+            <div className="icon">
+              <FontAwesomeIcon icon={faHandshake} />
+            </div>
+            <div className="number">200+</div>
+            </div>
+            <div className="label">Happy Clients</div>
           </div>
-          <div className="number">200+</div>
-          <div className="label">Happy Clients</div>
-        </div>
+          
+      
       </section>
     </section>
   );

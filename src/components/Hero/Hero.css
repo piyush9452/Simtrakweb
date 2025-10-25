@@ -33,8 +33,8 @@
 /* Right side video */
 .hero-video-container {
   flex: 1;
-  max-width: 40%;
-  display: flex;
+  max-width: 44%;
+display: flex;
   justify-content: center;
   align-items: center;
 }
