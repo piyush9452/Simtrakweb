@@ -31,7 +31,7 @@ const Stats: React.FC = () => {
       <div className="stats-hero">
         <h1>
           <span className="stats-hero-main">Our</span>
-          <span className="stats-hero-accent"> Networks</span>
+          <span className="stats-hero-accent"> Impacts</span>
         </h1>
       </div>
 

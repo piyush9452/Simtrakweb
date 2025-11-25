@@ -4,7 +4,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 6vw;
+  padding: 6px 5vw;
   font-family: "Georgia Pro", Georgia, serif;
   position: relative;
 }

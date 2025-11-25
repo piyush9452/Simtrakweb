@@ -46,7 +46,7 @@ const Founder: React.FC = () => {
         
 
           <h3 id="founder-name">Simran Sharma</h3>
-          <p id="founder-role">Founder</p>
+          {/* <p id="founder-role">Founder</p> */}
         </div>
       </div>
 
