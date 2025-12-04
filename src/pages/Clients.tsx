@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./Clients.css";
 import ClientTestimonial from "./Client-testimonial";
 import Adore from "../assets/Adore.webp";
@@ -133,8 +133,12 @@ const clients = [
   },
 ];
 
-
 const ClientsSection = () => {
+  const sliderRef = useRef<HTMLDivElement>(null);
+
+  const scrollLeft = () => sliderRef.current?.scrollBy({ left: -300, behavior: "smooth" });
+  const scrollRight = () => sliderRef.current?.scrollBy({ left: 300, behavior: "smooth" });
+
   return (
     <section className="clients-section">
       <div className="Client-hero">
@@ -148,15 +152,26 @@ const ClientsSection = () => {
         We're proud to partner with innovative organizations who trust us to deliver excellence.
       </p>
 
-      <div className="clients-grid">
-        {clients.map((client, index) => (
-          <div key={index} className="client-card">
-            <div className="logo-circle" style={{ "--border-gradient": client.borderGradient } as any}>
-              <img src={client.logo} alt={client.name} className="client-logo" />
-            </div>
-            <p className="client-testimonial">{client.testimonial}</p>
+      {/* ---- SLIDER WITH ARROWS ---- */}
+      <div className="slider-container">
+
+        <button className="arrow-btn left" onClick={scrollLeft}>❮</button>
+
+        <div className="clients-slider" ref={sliderRef}>
+          <div className="slider-track">
+            {clients.concat(clients).map((client, index) => (
+              <div key={index} className="client-card">
+                <div className="logo-circle" style={{ "--border-gradient": client.borderGradient } as any}>
+                  <img src={client.logo} alt={client.name} className="client-logo" />
+                </div>
+                <p className="client-testimonial">{client.testimonial}</p>
+              </div>
+            ))}
           </div>
-        ))}
+        </div>
+
+        <button className="arrow-btn right" onClick={scrollRight}>❯</button>
+
       </div>
 
       <ClientTestimonial />
